@@ -47,8 +47,8 @@ matplotlib 3.8.4
 Clone the repository and install with pip:
 
 ```bash
-git clone https://github.com/yourusername/multiomics_ensemble.git
-cd multiomics_ensemble
+git clone https://github.com/Qiu-Shizheng/MultiomicsLM.git
+cd MultiomicsLM
 pip install -e .
 
 
