@@ -44,6 +44,7 @@ matplotlib 3.8.4
 
 ## Installation
 
+It is difficult to upload overly large weight files on Github. We are attempting to deploy the model on Hugging Face.
 Clone the repository and install with pip:
 
 ```bash
@@ -51,6 +52,7 @@ git clone https://github.com/Qiu-Shizheng/MultiomicsLM.git
 cd MultiomicsLM
 pip install -e .
 
-
-
-
+multiomics_ensemble --global-rep /path/to/global_representations.npz \
+                      --model-pattern "/path/to/*_filtered/best_model.pt" \
+                      --protein-data /path/to/sample_protein.npy \
+                      --metabolite-data /path/to/sample_metabolite.npy
