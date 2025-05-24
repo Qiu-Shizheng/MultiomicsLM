@@ -52,7 +52,7 @@ git clone https://github.com/Qiu-Shizheng/MultiomicsLM.git
 cd MultiomicsLM
 pip install -e .
 
-multiomics_ensemble --global-rep /path/to/global_representations.npz \
+MultiomicsLM --global-rep /path/to/global_representations.npz \
                       --model-pattern "/path/to/*_filtered/best_model.pt" \
                       --protein-data /path/to/sample_protein.npy \
                       --metabolite-data /path/to/sample_metabolite.npy
