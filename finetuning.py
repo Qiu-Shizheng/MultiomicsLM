@@ -453,7 +453,7 @@ def fine_tune_disease(disease_file, protein_full_df, metabolite_full_df, global_
         learning_rate = 2e-5
         weight_decay = 1e-3
         optimizer = AdamW(model.parameters(), lr=learning_rate, weight_decay=weight_decay)
-        num_epochs = 30
+        num_epochs = 20
         total_steps = len(train_loader) * num_epochs
         scheduler = get_cosine_schedule_with_warmup(optimizer,
                                                     num_warmup_steps=int(0.05 * total_steps),
