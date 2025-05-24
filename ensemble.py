@@ -34,7 +34,6 @@ def load_ensemble_models(model_pattern, device, hidden_size, num_proteins, num_m
 
     Parameters:
       model_pattern: Glob pattern for model files.
-                     Example: "/home/user/qiushizheng/danbai/results_finetune_multiomicsbert_updated0417_0424_0501/*_filtered/best_model.pt"
       device: Torch device.
       hidden_size: Model hidden dimension.
       num_proteins: Number of protein features.
@@ -49,8 +48,7 @@ def load_ensemble_models(model_pattern, device, hidden_size, num_proteins, num_m
         raise ValueError(f"No model files found with pattern: {model_pattern}")
     ensemble_models = {}
     for model_file in model_files:
-        # Assume the file path format is like:
-        #   .../results_finetune_multiomicsbert_updated0417_0424_0501/{disease_code}_filtered/best_model.pt
+
         disease_dir = os.path.dirname(model_file)
         disease_code = os.path.basename(disease_dir).replace("_filtered", "")
         # Map the disease code to a full disease name if available.

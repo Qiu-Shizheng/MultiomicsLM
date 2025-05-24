@@ -8,7 +8,7 @@ def main():
     parser.add_argument('--global-rep', type=str, required=True,
                         help="Path to the global representations npz file.")
     parser.add_argument('--model-pattern', type=str, required=True,
-                        help='Glob pattern for ensemble model files. Example: "/path/to/*_filtered/best_model.pt"')
+                        help='Glob pattern for ensemble model files.')
     parser.add_argument('--num-metabolites', type=int, default=100,
                         help="Number of metabolite features expected (default: 100).")
     parser.add_argument('--protein-data', type=str, default=None,
