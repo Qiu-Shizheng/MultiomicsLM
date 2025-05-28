@@ -44,7 +44,7 @@ matplotlib 3.8.4
 
 ## Installation
 
-It is difficult to upload overly large weight files on Github. We are attempting to deploy the model on Hugging Face.
+It is difficult to upload overly large weight files on Github. The weight is provided at https://figshare.com/s/c83ae7892e5ab52d2e19.
 Clone the repository and install with pip:
 
 ```bash
