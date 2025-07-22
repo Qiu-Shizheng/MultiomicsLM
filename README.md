@@ -2,7 +2,7 @@
 
 This package provides an ensemble inference module for multiple disease models based on multiomics BERT. It enables you to load pre‐finetuned models for several diseases and, given a new multiomics sample (protein and metabolite data), outputs the predicted probability for each disease.
 
-![](https://github.com/Qiu-Shizheng/MultiomicsLM/blob/main/Figure/Figure%201.jpeg)
+![](https://github.com/Qiu-Shizheng/MultiomicsLM/blob/main/Figure/MultiomicsLM.jpeg)
 
 ## Supported Diseases
 
