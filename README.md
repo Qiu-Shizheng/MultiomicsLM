@@ -11,7 +11,6 @@ The following disease codes and names are supported:
 - dementia → Dementia  
 - parkinson → Parkinson’s disease  
 - copd → COPD  
-- asthma → Asthma  
 - RA → Rheumatoid arthritis  
 - obesity → Obesity  
 - diabetes → T2D  
