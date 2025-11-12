@@ -15,19 +15,16 @@ The following disease codes and names are supported:
 - RA → Rheumatoid arthritis  
 - obesity → Obesity  
 - diabetes → T2D  
-- gout → Gout  
 - hypertension → Hypertension  
 - heart_failure → Heart failure  
 - ischaemic_heart_disease → Ischaemic heart disease  
 - atrial_fibrillation → Atrial fibrillation  
 - stroke → Stroke  
-- cerebral_infarction → Cerebral infarction  
 - Breast_cancer → Breast cancer  
 - Colorectal_cancer → Colon cancer  
 - Lung_cancer → Lung cancer  
 - Prostate_cancer → Prostate cancer  
-- skin_cancer → Skin cancer  
-- glaucoma → Glaucoma  
+
 
 
 ## System requirements
