@@ -45,10 +45,7 @@ Clone the repository and install with pip:
 
 ```bash
 git clone https://github.com/Qiu-Shizheng/MultiomicsLM.git
-cd MultiomicsLM
-pip install -e .
 
-MultiomicsLM --global-rep global_representations.npz \
-                      --model-pattern "*_filtered/best_model.pt" \
-                      --protein-data sample_protein.npy \
-                      --metabolite-data sample_metabolite.npy
+
+
+
