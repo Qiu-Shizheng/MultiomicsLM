@@ -1,5 +1,8 @@
 # MultiomicsLM: A foundational model for characterizing the multi-omics landscape of the general population
 
+**According to the reviewers' requirements, we have significantly revised the manuscript and code. Therefore, the code cannot be provided for the time being.**
+
+
 This package provides an ensemble inference module for multiple disease models based on multiomics BERT. It enables you to load pre‐finetuned models for several diseases and, given a new multiomics sample (protein and metabolite data), outputs the predicted probability for each disease.
 
 ![]( )
