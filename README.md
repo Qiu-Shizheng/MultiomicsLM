@@ -1,7 +1,7 @@
 # MultiomicsLM
 
 <p align="center">
-  <b>MultiomicsLM</b> is a pretrained multi-omics foundation model for UK Biobank-scale proteomics and metabolomics.
+  <b>MultiomicsLM</b> is a pretrained multi-omics foundation model for proteomics and metabolomics.
 </p>
 
 <p align="center">
@@ -31,14 +31,6 @@ This repository provides an easy-to-use Python package for:
 4. extracting individual-level embeddings
 5. fine-tuning for current disease diagnosis or future disease prediction
 
----
-
-## Contact
-
-Maintainer:
-
-**Qiu Shizheng**  
-Email: **qiushizheng@hit.edu.cn**
 
 ---
 
@@ -93,20 +85,6 @@ multiomicslm impute \
   --protein examples/protein_input_example.csv \
   --mode p2m \
   --output outputs/predicted_metabolites_from_proteins.csv \
-  --pretrained-dir src/multiomicslm/assets/pretrained \
-  --device cuda:0 \
-  --batch-size 12
-```
-
-### Protein-to-metabolite completion with partially observed metabolites
-If both proteomics and metabolomics files are provided, observed metabolite values are preserved and missing metabolite values are filled using protein-to-metabolite prediction.
-
-```bash
-multiomicslm impute \
-  --protein examples/protein_input_example.csv \
-  --metabolite examples/metabolite_input_example.csv \
-  --mode p2m \
-  --output outputs/p2m_completed_metabolites.csv \
   --pretrained-dir src/multiomicslm/assets/pretrained \
   --device cuda:0 \
   --batch-size 12
@@ -252,13 +230,22 @@ output_dir/
 The proteomics and metabolomics columns must follow the same order as the pretrained model. \
 Metabolite values are internally processed using negative-to-missing conversion, log1p transform, and z-score normalization. \
 Protein values are internally processed using z-score normalization. \
-Missing values are zeroed after normalization, consistent with pretraining. \
+Missing values are zeroed after normalization, consistent with pretraining. 
 
+---
 
 ## Citation
-If you use MultiomicsLM in your work, please cite the corresponding paper or repository.
+If you use MultiomicsLM in your work, please cite the corresponding paper: **MultiomicsLM: A foundation model for characterizing the multi-omics landscape of the general population**.
 
 
+---
+
+## Contact
+
+Maintainer:
+
+**Qiu Shizheng**  
+Email: **qiushizheng@hit.edu.cn**
 
 
 
