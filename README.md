@@ -39,7 +39,7 @@ This repository provides an easy-to-use Python package for:
 ### Install from local source
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/MultiomicsLM.git
+git clone 
 cd MultiomicsLM
 pip install -e .
 ```
