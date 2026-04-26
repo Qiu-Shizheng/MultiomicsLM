@@ -1,0 +1,249 @@
+Total Cholesterol
+Total Cholesterol Minus HDL-C
+Remnant Cholesterol (Non-HDL, Non-LDL -Cholesterol)
+VLDL Cholesterol
+Clinical LDL Cholesterol
+LDL Cholesterol
+HDL Cholesterol
+Total Triglycerides
+Triglycerides in VLDL
+Triglycerides in LDL
+Triglycerides in HDL
+Total Phospholipids in Lipoprotein Particles
+Phospholipids in VLDL
+Phospholipids in LDL
+Phospholipids in HDL
+Total Esterified Cholesterol
+Cholesteryl Esters in VLDL
+Cholesteryl Esters in LDL
+Cholesteryl Esters in HDL
+Total Free Cholesterol
+Free Cholesterol in VLDL
+Free Cholesterol in LDL
+Free Cholesterol in HDL
+Total Lipids in Lipoprotein Particles
+Total Lipids in VLDL
+Total Lipids in LDL
+Total Lipids in HDL
+Total Concentration of Lipoprotein Particles
+Concentration of VLDL Particles
+Concentration of LDL Particles
+Concentration of HDL Particles
+Average Diameter for VLDL Particles
+Average Diameter for LDL Particles
+Average Diameter for HDL Particles
+Phosphoglycerides
+Triglycerides to Phosphoglycerides ratio
+Total Cholines
+Phosphatidylcholines
+Sphingomyelins
+Apolipoprotein B
+Apolipoprotein A1
+Apolipoprotein B to Apolipoprotein A1 ratio
+Total Fatty Acids
+Degree of Unsaturation
+Omega-3 Fatty Acids
+Omega-6 Fatty Acids
+Polyunsaturated Fatty Acids
+Monounsaturated Fatty Acids
+Saturated Fatty Acids
+Linoleic Acid
+Docosahexaenoic Acid
+Omega-3 Fatty Acids to Total Fatty Acids percentage
+Omega-6 Fatty Acids to Total Fatty Acids percentage
+Polyunsaturated Fatty Acids to Total Fatty Acids percentage
+Monounsaturated Fatty Acids to Total Fatty Acids percentage
+Saturated Fatty Acids to Total Fatty Acids percentage
+Linoleic Acid to Total Fatty Acids percentage
+Docosahexaenoic Acid to Total Fatty Acids percentage
+Polyunsaturated Fatty Acids to Monounsaturated Fatty Acids ratio
+Omega-6 Fatty Acids to Omega-3 Fatty Acids ratio
+Alanine
+Glutamine
+Glycine
+Histidine
+Total Concentration of Branched-Chain Amino Acids (Leucine + Isoleucine + Valine)
+Isoleucine
+Leucine
+Valine
+Phenylalanine
+Tyrosine
+Glucose
+Lactate
+Pyruvate
+Citrate
+3-Hydroxybutyrate
+Acetate
+Acetoacetate
+Acetone
+Creatinine
+Albumin
+Glycoprotein Acetyls
+Concentration of Chylomicrons and Extremely Large VLDL Particles
+Total Lipids in Chylomicrons and Extremely Large VLDL
+Phospholipids in Chylomicrons and Extremely Large VLDL
+Cholesterol in Chylomicrons and Extremely Large VLDL
+Cholesteryl Esters in Chylomicrons and Extremely Large VLDL
+Free Cholesterol in Chylomicrons and Extremely Large VLDL
+Triglycerides in Chylomicrons and Extremely Large VLDL
+Concentration of Very Large VLDL Particles
+Total Lipids in Very Large VLDL
+Phospholipids in Very Large VLDL
+Cholesterol in Very Large VLDL
+Cholesteryl Esters in Very Large VLDL
+Free Cholesterol in Very Large VLDL
+Triglycerides in Very Large VLDL
+Concentration of Large VLDL Particles
+Total Lipids in Large VLDL
+Phospholipids in Large VLDL
+Cholesterol in Large VLDL
+Cholesteryl Esters in Large VLDL
+Free Cholesterol in Large VLDL
+Triglycerides in Large VLDL
+Concentration of Medium VLDL Particles
+Total Lipids in Medium VLDL
+Phospholipids in Medium VLDL
+Cholesterol in Medium VLDL
+Cholesteryl Esters in Medium VLDL
+Free Cholesterol in Medium VLDL
+Triglycerides in Medium VLDL
+Concentration of Small VLDL Particles
+Total Lipids in Small VLDL
+Phospholipids in Small VLDL
+Cholesterol in Small VLDL
+Cholesteryl Esters in Small VLDL
+Free Cholesterol in Small VLDL
+Triglycerides in Small VLDL
+Concentration of Very Small VLDL Particles
+Total Lipids in Very Small VLDL
+Phospholipids in Very Small VLDL
+Cholesterol in Very Small VLDL
+Cholesteryl Esters in Very Small VLDL
+Free Cholesterol in Very Small VLDL
+Triglycerides in Very Small VLDL
+Concentration of IDL Particles
+Total Lipids in IDL
+Phospholipids in IDL
+Cholesterol in IDL
+Cholesteryl Esters in IDL
+Free Cholesterol in IDL
+Triglycerides in IDL
+Concentration of Large LDL Particles
+Total Lipids in Large LDL
+Phospholipids in Large LDL
+Cholesterol in Large LDL
+Cholesteryl Esters in Large LDL
+Free Cholesterol in Large LDL
+Triglycerides in Large LDL
+Concentration of Medium LDL Particles
+Total Lipids in Medium LDL
+Phospholipids in Medium LDL
+Cholesterol in Medium LDL
+Cholesteryl Esters in Medium LDL
+Free Cholesterol in Medium LDL
+Triglycerides in Medium LDL
+Concentration of Small LDL Particles
+Total Lipids in Small LDL
+Phospholipids in Small LDL
+Cholesterol in Small LDL
+Cholesteryl Esters in Small LDL
+Free Cholesterol in Small LDL
+Triglycerides in Small LDL
+Concentration of Very Large HDL Particles
+Total Lipids in Very Large HDL
+Phospholipids in Very Large HDL
+Cholesterol in Very Large HDL
+Cholesteryl Esters in Very Large HDL
+Free Cholesterol in Very Large HDL
+Triglycerides in Very Large HDL
+Concentration of Large HDL Particles
+Total Lipids in Large HDL
+Phospholipids in Large HDL
+Cholesterol in Large HDL
+Cholesteryl Esters in Large HDL
+Free Cholesterol in Large HDL
+Triglycerides in Large HDL
+Concentration of Medium HDL Particles
+Total Lipids in Medium HDL
+Phospholipids in Medium HDL
+Cholesterol in Medium HDL
+Cholesteryl Esters in Medium HDL
+Free Cholesterol in Medium HDL
+Triglycerides in Medium HDL
+Concentration of Small HDL Particles
+Total Lipids in Small HDL
+Phospholipids in Small HDL
+Cholesterol in Small HDL
+Cholesteryl Esters in Small HDL
+Free Cholesterol in Small HDL
+Triglycerides in Small HDL
+Phospholipids to Total Lipids in Chylomicrons and Extremely Large VLDL percentage
+Cholesterol to Total Lipids in Chylomicrons and Extremely Large VLDL percentage
+Cholesteryl Esters to Total Lipids in Chylomicrons and Extremely Large VLDL percentage
+Free Cholesterol to Total Lipids in Chylomicrons and Extremely Large VLDL percentage
+Triglycerides to Total Lipids in Chylomicrons and Extremely Large VLDL percentage
+Phospholipids to Total Lipids in Very Large VLDL percentage
+Cholesterol to Total Lipids in Very Large VLDL percentage
+Cholesteryl Esters to Total Lipids in Very Large VLDL percentage
+Free Cholesterol to Total Lipids in Very Large VLDL percentage
+Triglycerides to Total Lipids in Very Large VLDL percentage
+Phospholipids to Total Lipids in Large VLDL percentage
+Cholesterol to Total Lipids in Large VLDL percentage
+Cholesteryl Esters to Total Lipids in Large VLDL percentage
+Free Cholesterol to Total Lipids in Large VLDL percentage
+Triglycerides to Total Lipids in Large VLDL percentage
+Phospholipids to Total Lipids in Medium VLDL percentage
+Cholesterol to Total Lipids in Medium VLDL percentage
+Cholesteryl Esters to Total Lipids in Medium VLDL percentage
+Free Cholesterol to Total Lipids in Medium VLDL percentage
+Triglycerides to Total Lipids in Medium VLDL percentage
+Phospholipids to Total Lipids in Small VLDL percentage
+Cholesterol to Total Lipids in Small VLDL percentage
+Cholesteryl Esters to Total Lipids in Small VLDL percentage
+Free Cholesterol to Total Lipids in Small VLDL percentage
+Triglycerides to Total Lipids in Small VLDL percentage
+Phospholipids to Total Lipids in Very Small VLDL percentage
+Cholesterol to Total Lipids in Very Small VLDL percentage
+Cholesteryl Esters to Total Lipids in Very Small VLDL percentage
+Free Cholesterol to Total Lipids in Very Small VLDL percentage
+Triglycerides to Total Lipids in Very Small VLDL percentage
+Phospholipids to Total Lipids in IDL percentage
+Cholesterol to Total Lipids in IDL percentage
+Cholesteryl Esters to Total Lipids in IDL percentage
+Free Cholesterol to Total Lipids in IDL percentage
+Triglycerides to Total Lipids in IDL percentage
+Phospholipids to Total Lipids in Large LDL percentage
+Cholesterol to Total Lipids in Large LDL percentage
+Cholesteryl Esters to Total Lipids in Large LDL percentage
+Free Cholesterol to Total Lipids in Large LDL percentage
+Triglycerides to Total Lipids in Large LDL percentage
+Phospholipids to Total Lipids in Medium LDL percentage
+Cholesterol to Total Lipids in Medium LDL percentage
+Cholesteryl Esters to Total Lipids in Medium LDL percentage
+Free Cholesterol to Total Lipids in Medium LDL percentage
+Triglycerides to Total Lipids in Medium LDL percentage
+Phospholipids to Total Lipids in Small LDL percentage
+Cholesterol to Total Lipids in Small LDL percentage
+Cholesteryl Esters to Total Lipids in Small LDL percentage
+Free Cholesterol to Total Lipids in Small LDL percentage
+Triglycerides to Total Lipids in Small LDL percentage
+Phospholipids to Total Lipids in Very Large HDL percentage
+Cholesterol to Total Lipids in Very Large HDL percentage
+Cholesteryl Esters to Total Lipids in Very Large HDL percentage
+Free Cholesterol to Total Lipids in Very Large HDL percentage
+Triglycerides to Total Lipids in Very Large HDL percentage
+Phospholipids to Total Lipids in Large HDL percentage
+Cholesterol to Total Lipids in Large HDL percentage
+Cholesteryl Esters to Total Lipids in Large HDL percentage
+Free Cholesterol to Total Lipids in Large HDL percentage
+Triglycerides to Total Lipids in Large HDL percentage
+Phospholipids to Total Lipids in Medium HDL percentage
+Cholesterol to Total Lipids in Medium HDL percentage
+Cholesteryl Esters to Total Lipids in Medium HDL percentage
+Free Cholesterol to Total Lipids in Medium HDL percentage
+Triglycerides to Total Lipids in Medium HDL percentage
+Phospholipids to Total Lipids in Small HDL percentage
+Cholesterol to Total Lipids in Small HDL percentage
+Cholesteryl Esters to Total Lipids in Small HDL percentage
+Free Cholesterol to Total Lipids in Small HDL percentage
+Triglycerides to Total Lipids in Small HDL percentage
