@@ -52,9 +52,7 @@ cd MultiomicsLM
 pip install -e .
 ```
 
-
-
-
+---
 
 ## Missing value imputation
 ### Impute missing metabolomics values
@@ -66,7 +64,7 @@ multiomicslm impute \
   --output outputs/metabolite_imputed.csv \
   --pretrained-dir src/multiomicslm/assets/pretrained \
   --device cuda:0 \
-  --batch-size 128 \
+  --batch-size 12 \
   --n-iters 3
 ```
 
@@ -84,9 +82,185 @@ multiomicslm impute \
   --output outputs/protein_imputed.csv \
   --pretrained-dir src/multiomicslm/assets/pretrained \
   --device cuda:0 \
-  --batch-size 128 \
+  --batch-size 12 \
   --n-iters 3
 ```
+
+### Predict metabolites from proteomics
+This mode performs protein-to-metabolite prediction.
+```bash
+multiomicslm impute \
+  --protein examples/protein_input_example.csv \
+  --mode p2m \
+  --output outputs/predicted_metabolites_from_proteins.csv \
+  --pretrained-dir src/multiomicslm/assets/pretrained \
+  --device cuda:0 \
+  --batch-size 12
+```
+
+### Protein-to-metabolite completion with partially observed metabolites
+If both proteomics and metabolomics files are provided, observed metabolite values are preserved and missing metabolite values are filled using protein-to-metabolite prediction.
+
+```bash
+multiomicslm impute \
+  --protein examples/protein_input_example.csv \
+  --metabolite examples/metabolite_input_example.csv \
+  --mode p2m \
+  --output outputs/p2m_completed_metabolites.csv \
+  --pretrained-dir src/multiomicslm/assets/pretrained \
+  --device cuda:0 \
+  --batch-size 12
+```
+
+
+
+---
+
+## Extract individual embeddings
+### Protein-only embeddings
+
+```bash
+multiomicslm embed \
+  --protein examples/protein_input_example.csv \
+  --mode protein \
+  --output outputs/protein_embeddings.csv \
+  --pretrained-dir src/multiomicslm/assets/pretrained \
+  --device cuda:0 \
+  --batch-size 12
+```
+
+### Metabolite-only embeddings
+```bash
+multiomicslm embed \
+  --metabolite examples/metabolite_input_example.csv \
+  --mode metabolite \
+  --output outputs/metabolite_embeddings.csv \
+  --pretrained-dir src/multiomicslm/assets/pretrained \
+  --device cuda:0 \
+  --batch-size 12
+```
+
+### Fused multi-omics embeddings
+```bash
+multiomicslm embed \
+  --protein examples/protein_input_example.csv \
+  --metabolite examples/metabolite_input_example.csv \
+  --mode fused \
+  --output outputs/fused_embeddings.csv \
+  --pretrained-dir src/multiomicslm/assets/pretrained \
+  --device cuda:0 \
+  --batch-size 12
+```
+
+### Extract all embedding types
+```bash
+multiomicslm embed \
+  --protein examples/protein_input_example.csv \
+  --metabolite examples/metabolite_input_example.csv \
+  --mode all \
+  --output outputs/all_embeddings.csv \
+  --pretrained-dir src/multiomicslm/assets/pretrained \
+  --device cuda:0
+```
+
+
+---
+
+## Fine-tuning for disease prediction
+### Binary label fine-tuning
+```bash
+multiomicslm finetune \
+  --protein examples/protein_input_example.csv \
+  --metabolite examples/metabolite_input_example.csv \
+  --labels examples/binary_labels_example.csv \
+  --label-col label \
+  --modality fused \
+  --finetune frozen \
+  --output-dir outputs/finetune_binary_fused \
+  --pretrained-dir src/multiomicslm/assets/pretrained \
+  --device cuda:0 \
+  --batch-size 12 \
+  --epochs 50
+```
+
+### Current disease diagnosis using diagnosis dates
+
+```bash
+multiomicslm finetune \
+  --protein examples/protein_input_example.csv \
+  --metabolite examples/metabolite_input_example.csv \
+  --labels examples/date_labels_example.csv \
+  --baseline-date-col baseline_date \
+  --diagnosis-date-col diagnosis_date \
+  --task baseline \
+  --modality fused \
+  --finetune frozen \
+  --output-dir outputs/current_disease_prediction \
+  --pretrained-dir src/multiomicslm/assets/pretrained \
+  --device cuda:0
+```
+
+### Future disease prediction using diagnosis dates
+```bash
+multiomicslm finetune \
+  --protein examples/protein_input_example.csv \
+  --metabolite examples/metabolite_input_example.csv \
+  --labels examples/date_labels_example.csv \
+  --baseline-date-col baseline_date \
+  --diagnosis-date-col diagnosis_date \
+  --task future \
+  --modality fused \
+  --finetune full \
+  --output-dir outputs/future_disease_prediction \
+  --pretrained-dir src/multiomicslm/assets/pretrained \
+  --device cuda:0 \
+  --epochs 80 \
+  --lr-head 1e-4 \
+  --lr-encoder 1e-6
+```
+
+
+
+### Fine-tuning outputs
+Each fine-tuning run generates:
+
+```bash
+
+output_dir/
+├── checkpoints/
+│   └── best_model.pt
+├── figures/
+│   ├── training_curves.png
+│   ├── training_curves.pdf
+│   ├── roc_pr_val.png
+│   ├── roc_pr_val.pdf
+│   ├── probability_val.png
+│   └── probability_val.pdf
+├── metrics/
+│   ├── summary.json
+│   └── training_history.csv
+└── predictions/
+    ├── predictions_train.csv
+    ├── predictions_val.csv
+    ├── predictions_all.csv
+    ├── train_embeddings.npy
+    └── val_embeddings.npy
+
+```
+
+## Important notes
+The proteomics and metabolomics columns must follow the same order as the pretrained model. \
+Metabolite values are internally processed using negative-to-missing conversion, log1p transform, and z-score normalization. \
+Protein values are internally processed using z-score normalization. \
+Missing values are zeroed after normalization, consistent with pretraining. \
+
+
+## Citation
+If you use MultiomicsLM in your work, please cite the corresponding paper or repository.
+
+
+
+
 
 
 
