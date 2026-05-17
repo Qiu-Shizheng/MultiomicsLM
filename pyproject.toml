@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multiomicslm"
+version = "0.1.0"
+description = "MultiomicsLM: multi-omics model utilities for proteomics and metabolomics"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+keywords = [
+    "multiomics",
+    "proteomics",
+    "metabolomics",
+    "foundation-model",
+    "imputation",
+    "pytorch"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+dependencies = [
+    "numpy>=1.23",
+    "pandas>=1.5",
+    "scipy>=1.9",
+    "scikit-learn>=1.2",
+    "torch>=2.0",
+    "matplotlib>=3.6",
+    "tqdm>=4.64"
+]
+
+[project.optional-dependencies]
+dev = [
+    "build",
+    "twine",
+    "pytest"
+]
+
+[project.scripts]
+multiomicslm = "multiomicslm.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+multiomicslm = ["assets/pretrained/*"]
